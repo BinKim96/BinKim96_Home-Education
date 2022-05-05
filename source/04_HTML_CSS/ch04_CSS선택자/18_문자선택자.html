@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        #wrap {width:800px; margin: 0 auto;}
+        #header, #footer{border:1px solid black;}
+        #header {
+            text-align:center;
+            border-bottom: 1px solid #cccccc;
+        }
+        #content p:nth-child(2)::first-line,
+        #content p:nth-child(3)::first-line{
+            color: blue;
+            font-weight: bold;
+            font-size: 1.3em; /*20px*/
+        }
+        #content p:nth-child(2)::first-letter,
+        #content p:nth-child(3)::first-letter{
+            font-size: 2em; /*40px*/
+        }
+        #content p:nth-child(2)::selection{
+            background-color: violet;
+            color: yellow;
+        }
+        #footer ul{
+            overflow: hidden; /*block형 태그를 수평으로 놓고자 하는 부모단*/
+        }
+        #footer ul li{
+            float:left; /*blcok형 태그를 수평으로*/
+            list-style: none;
+            padding: 10px;
+            margin: 5px 10px;
+        }
+        #footer ul li:first-child{padding-top: 25px;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+      <div id="header">
+          <h1>제목이나 회사명</h1>
+      </div>
+      <div id="content">
+          <p>나는 북간도에 헤일 벌써 이제 이런 하나의 하나에 봅니다.</p>
+          <p>
+              무성할 북간도에 파란 이웃 옥 별들을 나는 계집애들의 흙으로 버리었습니다. 아스라히 아름다운 덮어 아이들의 내 헤일 계절이 북간도에 있습니다. 하나에 이름과, 시와 아스라히 봅니다. 않은 보고, 마리아 아직 가득 슬퍼하는 봅니다. 비둘기, 그리고 라이너 이제 쉬이 차 자랑처럼 아름다운 계십니다. 별에도 흙으로 슬퍼하는 위에 봅니다. 이름을 다하지 위에 아침이 오면 계십니다. 라이너 별 무성할 버리었습니다. 별 아이들의 없이 봅니다. 패, 어머님, 나는 너무나 이웃 봅니다.
+          </p>
+          <p>
+          이 내 별 아름다운 노새, 벌레는 풀이 노루, 계십니다. 쓸쓸함과 다 경, 이름과, 봅니다. 이름과, 그리워 아스라히 동경과 잠, 하나에 그리고 남은 있습니다. 헤일 한 보고, 가을 거외다. 위에 풀이 어머님, 까닭입니다. 흙으로 없이 까닭이요, 무덤 이네들은 계십니다. 까닭이요, 차 다 이름을 옥 다 내 이름과, 하늘에는 봅니다. 라이너 노새, 덮어 부끄러운 멀리 거외다. 흙으로 쉬이 나의 아스라히 우는 시인의 소학교 나는 언덕 거외다.
+          </p>
+      </div>
+      <div id="footer">
+          <ul>
+              <li><img src="0503/logo.png" alt="회사주소" /></li>
+              <li><img src="0503/address.png" alt="회사주소" /></li>
+          </ul>
+      </div>
+    </div>
+</body>
+</html>

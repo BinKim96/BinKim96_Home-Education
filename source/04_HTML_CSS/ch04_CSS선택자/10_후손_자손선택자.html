@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        #header, #wrap, #footer{
+            width:600px; margin:0 auto; border:1px solid gray;
+        }
+        #header {overflow:hidden;}
+        #header .logo{ /*후손선택자*/
+          float:left; padding:10px 30px 10px 150px;
+        }
+        #header> .name{ /*자손선택자(바로아래단)*/
+          float:left; padding:20px 30px 10px 70px;
+        }
+        div p{ /*후손선택자(div 밑에 있는 p)*/
+          font-size:25px; /*p태그의 기본 font-size는 16*/
+        }
+        div > p { /*자손선택자(div 바로 밑에 있는 p)*/
+          color:red;
+          font-size:16px;
+        }
+        #footer{text-align:center;}
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="logo">
+            <h1>LOGO</h1>
+        </div>
+        <div class="name">
+            <h2>00 주식회사</h2>
+        </div>
+    </div>
+    <div id="wrap">
+        <p>
+            방황하였으며, 청춘의 그들의 같이, 부패를 커다란 불러 긴지라 있는 있는가? 우리는 우리의 싶이 든 따뜻한 이성은 청춘의 앞이 없는 교향악이다. 바이며, 고행을 노년에게서 노래하며 못할 그들은 청춘의 가치를 것이다. 품으며, 트고, 천지는 것이다. 그러므로 가장 바이며, 투명하되 쓸쓸하랴? 설레는 끝에 있는 구하지 쓸쓸하랴? 커다란 고행을 무엇을 주는 별과 보는 약동하다. 찾아 못할 실로 운다. 인류의 그들은 영원히 생생하며, 되려니와, 노년에게서 가진 것이다. 때에, 인간에 인도하겠다는 인간의 지혜는 가치를 미인을 이것이다. 이상의 있는 능히 것이다.
+        </p>
+        <ul>
+            <li><p>방황하였으며, 청춘의 그들의 같이</p></li>
+            <li><p>부패를 커다란 불러 긴지라 있는 있는가?</p></li>
+            <li><p>우리는 우리의 싶이 든 따뜻한 이성은 청춘의 앞이 없는 교향악이다.</p></li>
+        </ul>
+    </div>
+    <div id="footer">
+        <p>서울시 가남구 여사동 좋은빌딩 402호</p>
+    </div>
+</body>
+</html>

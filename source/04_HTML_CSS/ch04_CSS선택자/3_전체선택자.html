@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        * { /* 전체 선택자 : 모든 태그에 적용 : 전체 페이지 디자인 초기화 용도 */
+            margin:0; /* 밖 여백*/
+            padding:0; /* 안 여백*/
+            /* 페이지 내 기본 폰트 설정 */
+            color: saddlebrown;
+        }
+        header, nav, section, footer{
+            width:500px; /*가로사이즈*/
+            margin: 10px auto; /* 상, 우, 하, 좌(시계방향) 가운데로 */
+            border: 1px  solid gray;
+        }
+        header h1 {text-align:center;}
+        nav ul {overflow:hidden;} /* 수평으로 하고 싶은 태그의 부모단*/
+        nav ul li { 
+          float: left; /* block타입 태그를 수평으로 배치 */
+          list-style: none;
+          /*padding: 10px 20px;*/ /*10px 20px 10px 20px 상우하좌 안 여백*/
+          width:125px;
+          text-align: center;
+        }
+        section {
+            clear:both; /* overflow : hidden; 을 잘 했으면 생략하기도 함*/
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>00 주식회사</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>회사소개</li>
+            <li>서비스</li>
+            <li>고객센터</li>
+            <li>공지사항</li>
+        </ul>
+    </nav>
+    <section>
+        <p>
+            부끄러운 쉬이 새겨지는 남은 때 별 다 프랑시스 딴은 봅니다. 밤이 너무나 쉬이 릴케 별 무성할 헤는 있습니다. 말 별 프랑시스 가득 때 것은 듯합니다. 아침이 어머님, 노루, 많은 하나에 까닭입니다. 하나의 때 너무나 새워 있습니다. 시와 하나에 겨울이 별 나는 별 나는 있습니다. 릴케 별 위에 새워 동경과 하나 나의 경, 다 까닭입니다.
+        </p>
+        <p>
+            너무나 프랑시스 시와 다 까닭이요, 보고, 쉬이 언덕 까닭입니다. 이름자 써 나는 소학교 노루, 속의 못 다 별 봅니다. 아름다운 밤을 했던 별들을 이름과, 아무 하나에 봅니다. 하늘에는 어머님, 옥 계절이 아이들의 릴케 남은 책상을 있습니다.
+        </p>
+    </section>
+    <footer>
+        <p>서울시 강남구 강남대로94길 13 좋은빌딩 402호</p>
+    </footer>
+</body>
+</html>
