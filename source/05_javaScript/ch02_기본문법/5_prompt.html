@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        scoreStr = prompt('점수를 입력하세용', '0~100점 사이');
+        if (scoreStr == null) { // 취소를 누르면 scoreStr에 null이 넘어감
+            alert('점수를 입력하세용');
+        } else {
+            // document.write(scoreStr + '의 타입은 ' + typeof (scoreStr));
+            score = Number(scoreStr); // Number("")의 결과는 0 -> 아무것도 안치고 확인버튼 누르면 0이 들어간다는 말임 cf. 자바에서는 Integer.parseInt("") 오류
+            // document.write(score + '의 타입은 ' + typeof(score));
+            if (isNaN(score)) { // score가 NaN이면 true를 return
+                alert('숫자를 입력하세용');
+            } else {
+                result = score > 70 ? "HAPPY" : "SAD";
+            }
+            document.write(result);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

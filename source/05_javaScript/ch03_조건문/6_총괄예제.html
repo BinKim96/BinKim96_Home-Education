@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function chk() {
+            var su1Str = frm.first.value;
+            var su2Str = frm.second.value;
+            var su1 = Number(su1Str);
+            var su2 = Number(su2Str);
+            if (!su1 || isNaN(su1)) {
+                alert('첫번째 수를 입력하세요');
+                return false;
+            } else if (!su2 || isNaN(su2)) {
+                alert('두번째 수를 입력하세요');
+                return false;
+            }
+            var diff = (su1 > su2) ? (su1 - su2) : (su2 - su1);
+
+            if (su1 == su2) {
+                var msg = "<h3> 두 수가 같습니다</h3>";
+            } else if (su1 > su2) {
+                var msg = "<h3>첫번째 수가 " + diff + "만큽 큽니다</h3>";
+            } else  {
+                var msg = "<h3>두번째 수가 " + diff + "만큽 큽니다</h3>";
+            }
+            alertMsg = msg.substr(4);
+            alertMsg = alertMsg.substr(0, alertMsg.indexOf('</h3>'));
+            document.body.innerHTML += msg;
+            alert(alertMsg);
+            frm.first.value = su1;
+            frm.second.value = su2;
+            return false;
+        }     
+    </script>
+    <style>
+        table {
+            width: 300px;
+            margin: 0 auto;
+            padding: 25px 0 25px 20px;
+            border: 1px solid gray;
+        }
+        table input[type=submit] {
+            margin: 20px 0 0 100px;
+            padding: 0 10px;
+            background-color: mediumpurple;
+            border: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form name="frm" onsubmit="return chk()">
+        <table>
+            <tr>
+                <td>첫번째수</td>
+                <td><input type="text" name="first" id="first" /></td>
+            </tr>
+            <tr>
+                <td>두번째수</td>
+                <td><input type="text" name="second" id="second" /></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="결과" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

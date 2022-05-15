@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        table {
+            border: 1px solid lightgray;
+        }
+        td {
+            border: 1px solid lightgray;
+            padding: 5px 10px 5px 5px;
+        }
+    </style>
+    <script>
+        document.write('<table>');
+        document.write('<caption>2~9단 구구단</caption><tr>');
+        for (var i = 2; i <= 9; i++) {
+            document.write('<th>' + i + '단</th>');
+        }
+        document.write('</th>');
+        // 2~9 단까지 구구단 출력
+        for (var i = 1; i <= 9; i++) {
+            document.write('<tr>')
+            for (var j = 2; j <= 9; j++) {
+                document.write('<td>' + j + ' * ' + i + ' = ' + (j * i) + '</td>');
+            }
+            document.write('</tr>');
+        }
+        document.write('</table>');
+    </script>
+</head>
+<body>
+
+</body>
+</html>
